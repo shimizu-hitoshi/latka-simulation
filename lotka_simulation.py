@@ -78,8 +78,12 @@ def simulate(experiment: Experiment) -> List[Dict[str, float]]:
     for step in range(1, steps + 1):
         k1x, k1y = _derivatives(prey, predator, experiment.parameters)
 
-        k2x, k2y = _derivatives(prey + (dt * k1x) / 2.0, predator + (dt * k1y) / 2.0, experiment.parameters)
-        k3x, k3y = _derivatives(prey + (dt * k2x) / 2.0, predator + (dt * k2y) / 2.0, experiment.parameters)
+        k2x, k2y = _derivatives(
+            prey + (dt * k1x) / 2.0, predator + (dt * k1y) / 2.0, experiment.parameters
+        )
+        k3x, k3y = _derivatives(
+            prey + (dt * k2x) / 2.0, predator + (dt * k2y) / 2.0, experiment.parameters
+        )
         k4x, k4y = _derivatives(prey + dt * k3x, predator + dt * k3y, experiment.parameters)
 
         prey += (dt / 6.0) * (k1x + 2.0 * k2x + 2.0 * k3x + k4x)
