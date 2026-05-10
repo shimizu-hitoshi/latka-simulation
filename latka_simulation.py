@@ -58,9 +58,11 @@ DEFAULT_EXPERIMENTS: List[Experiment] = [
 ]
 
 
-def _derivatives(prey: float, predator: float, p: LotkaVolterraParameters) -> tuple[float, float]:
-    dprey = p.alpha * prey - p.beta * prey * predator
-    dpredator = p.delta * prey * predator - p.gamma * predator
+def _derivatives(
+    prey: float, predator: float, parameters: LotkaVolterraParameters
+) -> tuple[float, float]:
+    dprey = parameters.alpha * prey - parameters.beta * prey * predator
+    dpredator = parameters.delta * prey * predator - parameters.gamma * predator
     return dprey, dpredator
 
 

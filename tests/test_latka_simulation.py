@@ -6,7 +6,7 @@ from pathlib import Path
 from latka_simulation import DEFAULT_EXPERIMENTS, run_reproduction, simulate
 
 
-class LatkaSimulationTest(unittest.TestCase):
+class LotkaSimulationTest(unittest.TestCase):
     def test_simulate_generates_expected_number_of_points(self) -> None:
         experiment = DEFAULT_EXPERIMENTS[0]
         rows = simulate(experiment)
