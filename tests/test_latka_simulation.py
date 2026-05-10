@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from latka_simulation import DEFAULT_EXPERIMENTS, run_reproduction, simulate
+from lotka_simulation import DEFAULT_EXPERIMENTS, run_reproduction, simulate
 
 
 class LotkaSimulationTest(unittest.TestCase):

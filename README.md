@@ -8,7 +8,7 @@ Lotka-Volterra（被食者-捕食者）モデルで、論文再現用の実験�
 ### 実行方法
 
 ```bash
-python latka_simulation.py --output-dir outputs
+python lotka_simulation.py --output-dir outputs
 ```
 
 ### 出力
