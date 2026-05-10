@@ -35,6 +35,9 @@ def simulate_lotka(author_total=721, alpha=41):
 def run(trials=10, author_total=721, alpha=41):
     """
     シミュレーションを指定回数（デフォルト10回）実行し、平均を出力する関数。
+    trials: 試行回数 (デフォルト10)
+    author_total: 総著者数 (デフォルト721)
+    alpha: 新しい著者が論文を出版する確率(%) (デフォルト41)
     """
     avg_bins = [0] * 12
 
