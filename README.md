@@ -1,4 +1,4 @@
-# latka-simulation
+# lotka-simulation
 https://journals.sagepub.com/doi/10.5153/sro.85
 
 ## 論文再現実験コード
